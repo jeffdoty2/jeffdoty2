@@ -1,0 +1,7 @@
+        state: "{{ ((6.112 * (e** ((17.67 * (((states('sensor.outdoors_temperature') | float )-32)/1.8) ) / ( (((states('sensor.outdoors_temperature') | float )-32)/1.8) + 243.5))) * (states('sensor.outdoors_humidity') | float ) * 2.1674) / (273.15 + (((states('sensor.outdoors_temperature') | float )-32)/1.8) ) ) | round(2) }}"
+
+
+(((states('sensor.outdoors_temperature') | float )-32)/1.8)
+
+
+        state: "{{ ((6.112 * (e** ((17.67 * (((states('sensor.indoors_temperature') | float )-32)/1.8) ) / ( (((states('sensor.indoors_temperature') | float )-32)/1.8) + 243.5))) * (states('sensor.outdoors_humidity') | float ) * 2.1674) / (273.15 + (((states('sensor.indoors_temperature') | float )-32)/1.8) ) ) | round(2) }}"
