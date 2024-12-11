@@ -1,5 +1,7 @@
 ESP32 Water sensor
+
 Setup for 4 channel ADC 0-5V 0-150 psi pressure sensors
+
 Sensata Technologies 2CP5-46-1
 
 <!---
